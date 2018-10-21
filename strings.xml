@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SpeedConverter</string>
+    <string-array name="distances">
+        <item>Miles</item>
+        <item>Yards</item>
+        <item>Feet</item>
+        <item>Inches</item>
+        <item>Kilometers</item>
+        <item>Meters</item>
+    </string-array>
+    <string-array name="speeds">
+        <item>Hours</item>
+        <item>Minutes</item>
+        <item>Seconds</item>
+    </string-array>
+</resources>

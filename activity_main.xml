@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.example.danie.speedconverter.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--Create a new linear layout to be at a vertical orientation. -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/distanceOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/spinners"></Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per"
+                android:textSize="8dp" />
+
+            <Spinner
+                android:id="@+id/speedOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/spinners">
+
+            </Spinner>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="To"
+            android:textColor="@color/text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/distanceTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/spinners">
+
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per"
+
+                android:textSize="8dp" />
+
+            <Spinner
+                android:id="@+id/speedTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/spinners">
+
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/inputDist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="conversion"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/distSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/text"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
