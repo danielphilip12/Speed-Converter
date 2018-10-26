@@ -1,4 +1,4 @@
-package com.example.danie.speedconverter;
+package com.example.danie.speedconverter; //Will be different on other people's computers
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
